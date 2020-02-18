@@ -4,7 +4,7 @@
 setopt CORRECT
 
 # in order to use #, ~ and ^ for filename generation grep word
-# *~(*.gz|*.bz|*.bz2|*.zip|*.Z) -> searches for word not in compressed files
+# ~(*.gz|*.bz|*.bz2|*.zip|*.Z) -> searches for word not in compressed files
 # don't forget to quote '^', '~' and '#'!
 setopt extended_glob
 
@@ -31,7 +31,7 @@ setopt no_hup
 # avoid "beep"ing
 setopt no_beep
 
-# * shouldn't match dotfiles. ever.
+# shouldn't match dotfiles. ever.
 setopt no_glob_dots
 
 # use zsh style word splitting

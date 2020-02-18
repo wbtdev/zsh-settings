@@ -1,5 +1,3 @@
-# -*- mode: sh; sh-indentation: 4; indent-tabs-mode: nil; sh-basic-offset: 4; -*-
-
 # Copyright (c) 2020 Brad Thorne
 
 # According to the Zsh Plugin Standard:
@@ -21,6 +19,6 @@ fpath+=( "${0:h}/functions" )
 typeset -gA Plugins
 Plugins[ZSH_SETTINGS_DIR]="${0:h}"
 
-autoload -Uz term_colors
+autoload -Uz term_colors reload
 
 

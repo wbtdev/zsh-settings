@@ -56,6 +56,7 @@ if zstyle -T ':prezto:module:utility' safe-ops; then
 fi
 
 if (( $+commands[rg] )); then
+  export RIPGREP_CONFIG_PATH=~/.ripgreprc
   alias grep='rg'
 fi
 
